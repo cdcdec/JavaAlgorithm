@@ -1,6 +1,6 @@
 package com.cdc.algorithm_problem;
 /**
- * Çó×î´ó¹«Ô¼ÊıºÍ×îĞ¡¹«±¶Êı
+ * æ±‚æœ€å¤§å…¬çº¦æ•°å’Œæœ€å°å…¬å€æ•°
  * @author cdc
  *
  */
@@ -8,14 +8,14 @@ public class GreatestCommonDivisor {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.format("%dºÍ%dµÄ×î´ó¹«Ô¼ÊıÊÇ:%d", 282,286,getGreatestCommonDivisor(282, 286));
+		System.out.format("%då’Œ%dçš„æœ€å¤§å…¬çº¦æ•°æ˜¯:%d", 282,286,getGreatestCommonDivisor(282, 286));
 		System.out.println("\r");
-		System.out.format("%dºÍ%dµÄ×îĞ¡¹«±¶ÊıÊÇ:%d", 282,286,getLeastCommonMultiple(282,286,getGreatestCommonDivisor(282, 286)));
+		System.out.format("%då’Œ%dçš„æœ€å°å…¬å€æ•°æ˜¯:%d", 282,286,getLeastCommonMultiple(282,286,getGreatestCommonDivisor(282, 286)));
 	}
 	/**
-	 * ÇóÁ½¸öÕıÕûÊıµÄ×î´ó¹«Ô¼Êı
-	 * Õ·×ªÏà³ı·¨£¬ 
-	 * ÓÖÃûÅ·¼¸ÀïµÂËã·¨£¨Euclidean algorithm£©ÄËÇóÁ½¸öÕıÕûÊıÖ®×î´ó¹«Òò×ÓµÄËã·¨.
+	 * æ±‚ä¸¤ä¸ªæ­£æ•´æ•°çš„æœ€å¤§å…¬çº¦æ•°
+	 * è¾—è½¬ç›¸é™¤æ³•ï¼Œ 
+	 * åˆåæ¬§å‡ é‡Œå¾·ç®—æ³•ï¼ˆEuclidean algorithmï¼‰ä¹ƒæ±‚ä¸¤ä¸ªæ­£æ•´æ•°ä¹‹æœ€å¤§å…¬å› å­çš„ç®—æ³•.
 	 * @param m
 	 * @param n
 	 * @return
@@ -31,10 +31,10 @@ public class GreatestCommonDivisor {
 		}
 	}
 	/**
-	 * ÇóÁ½¸öÕıÕûÊıµÄ×îĞ¡¹«±¶Êı
+	 * æ±‚ä¸¤ä¸ªæ­£æ•´æ•°çš„æœ€å°å…¬å€æ•°
 	 * @param m
 	 * @param n
-	 * @param ÕâÁ½¸öÊıµÄ×î´ó¹«Ô¼Êı
+	 * @param è¿™ä¸¤ä¸ªæ•°çš„æœ€å¤§å…¬çº¦æ•°
 	 * @return
 	 */
 	public static int getLeastCommonMultiple(int m,int n,int c){
@@ -42,7 +42,7 @@ public class GreatestCommonDivisor {
 		return temp;
 	}
 	/**
-	 * ¸üÏà¼õËğ·¨,ÓÖ³Æ"µÈÖµËã·¨"
+	 * æ›´ç›¸å‡æŸæ³•,åˆç§°"ç­‰å€¼ç®—æ³•"
 	 * @param m
 	 * @param n
 	 * @return

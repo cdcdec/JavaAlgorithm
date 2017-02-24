@@ -1,7 +1,7 @@
 package com.cdc.algorithm_problem;
 /**
- * Ë®ÏÉ»¨ÊıÊÇÖ¸Ò»¸ö nÎ»ÕıÕûÊı (n¡İ3),ËüµÄÃ¿¸öÎ»ÉÏµÄÊı×ÖµÄ n´ÎÃİÖ®ºÍµÈÓÚËü±¾Éí.
- * (ÀıÈç£º1^3 + 5^3+ 3^3 = 153)
+ * æ°´ä»™èŠ±æ•°æ˜¯æŒ‡ä¸€ä¸ª nä½æ­£æ•´æ•° (nâ‰¥3),å®ƒçš„æ¯ä¸ªä½ä¸Šçš„æ•°å­—çš„ næ¬¡å¹‚ä¹‹å’Œç­‰äºå®ƒæœ¬èº«.
+ * (ä¾‹å¦‚ï¼š1^3 + 5^3+ 3^3 = 153)
  * 1634=1^4+6^4+3^4+4^4.
  * 
  * @author cdc
@@ -13,13 +13,13 @@ public class NarcissisticNumber {
 		for (int i = 100; i <= 999; i++) {
 			boolean bl = isNarcissisticNumber1(i);
 			if (bl) {
-				System.out.format("%dÊÇË®ÏÉ»¨Êı", i);
+				System.out.format("%dæ˜¯æ°´ä»™èŠ±æ•°", i);
 				System.out.println("\n");
 			}
 		}
 	}
 	/**
-	 * ÇóÈıÎ»ÊıµÄË®ÏÉ»¨Êı
+	 * æ±‚ä¸‰ä½æ•°çš„æ°´ä»™èŠ±æ•°
 	 * @param x
 	 * @return
 	 */
@@ -37,7 +37,7 @@ public class NarcissisticNumber {
 		return flag;
 	}
 	/**
-	 * ÇóËÄÎ»ÊıµÄË®ÏÉ»¨Êı
+	 * æ±‚å››ä½æ•°çš„æ°´ä»™èŠ±æ•°
 	 * @param x
 	 * @return
 	 */

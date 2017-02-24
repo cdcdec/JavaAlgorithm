@@ -1,7 +1,7 @@
 package com.cdc.algorithm_problem;
 /**
- * Í³¼Æ×Ö·û¸öÊı
- * ×ÖÄ¸¸öÊı,ºº×Ö¸öÊı,Êı×Ö×ÖÊı,¿Õ¸ñ¸öÊı,ÆäËü×Ö·û¸öÊı¡£
+ * ç»Ÿè®¡å­—ç¬¦ä¸ªæ•°
+ * å­—æ¯ä¸ªæ•°,æ±‰å­—ä¸ªæ•°,æ•°å­—å­—æ•°,ç©ºæ ¼ä¸ªæ•°,å…¶å®ƒå­—ç¬¦ä¸ªæ•°ã€‚
  * @author cdc
  *
  */
@@ -10,18 +10,18 @@ public class StatisticalCharacter {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		System.out.println(getCharsNums1("jkluyo 9876543 !* ÖĞ¹ú"));
+		System.out.println(getCharsNums1("jkluyo 9876543 !* ä¸­å›½"));
 		
 	}
 	
 	public static String getCharsNums1(String str){
-		//Êı×Ö¸öÊı
+		//æ•°å­—ä¸ªæ•°
 		int digital=0;
-		//×ÖÄ¸¸öÊı
+		//å­—æ¯ä¸ªæ•°
 		int character=0;
-		//·ÇÊı×Ö,×ÖÄ¸,¿Õ¸ñµÄ¸öÊı
+		//éæ•°å­—,å­—æ¯,ç©ºæ ¼çš„ä¸ªæ•°
 		int other=0;
-		//¿Õ¸ñ¸öÊı
+		//ç©ºæ ¼ä¸ªæ•°
 		int blank=0;
 		int chineseCharacters=0;
 		char[] ch=str.toCharArray();
@@ -47,19 +47,19 @@ public class StatisticalCharacter {
 		}
 		
 		StringBuilder  stringBuilder=new StringBuilder();
-		stringBuilder.append("Êı×Ö¸öÊı:");
+		stringBuilder.append("æ•°å­—ä¸ªæ•°:");
 		stringBuilder.append(digital);
 		stringBuilder.append("\n");
-		stringBuilder.append("×ÖÄ¸¸öÊı:");
+		stringBuilder.append("å­—æ¯ä¸ªæ•°:");
 		stringBuilder.append(character);
 		stringBuilder.append("\n");
-		stringBuilder.append("¿Õ¸ñ¸öÊı:");
+		stringBuilder.append("ç©ºæ ¼ä¸ªæ•°:");
 		stringBuilder.append(blank);
 		stringBuilder.append("\n");
-		stringBuilder.append("ºº×Ö¸öÊı:");
+		stringBuilder.append("æ±‰å­—ä¸ªæ•°:");
 		stringBuilder.append(chineseCharacters);
 		stringBuilder.append("\n");
-		stringBuilder.append("·Çºº×Ö,Êı×Ö,×ÖÄ¸,¿Õ¸ñµÄ¸öÊı:");
+		stringBuilder.append("éæ±‰å­—,æ•°å­—,å­—æ¯,ç©ºæ ¼çš„ä¸ªæ•°:");
 		stringBuilder.append(other-chineseCharacters);
 		return stringBuilder.toString();
 	}

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * µİ¹éÒ»¸öÎÄ¼ş¼ĞÏÂµÄËùÓĞÎÄ¼ş,°üÀ¨Õâ¸ö×ÓÎÄ¼ş¼ĞÏÂµÄÎÄ¼ş; Èç¹û±éÀúDÅÌ(¸ùÄ¿Â¼)ÏÂµÄÎÄ¼ş»á±¨´í???
+ * é€’å½’ä¸€ä¸ªæ–‡ä»¶å¤¹ä¸‹çš„æ‰€æœ‰æ–‡ä»¶,åŒ…æ‹¬è¿™ä¸ªå­æ–‡ä»¶å¤¹ä¸‹çš„æ–‡ä»¶; å¦‚æœéå†Dç›˜(æ ¹ç›®å½•)ä¸‹çš„æ–‡ä»¶ä¼šæŠ¥é”™???
  * 
  * @author cdc
  *
@@ -42,21 +42,21 @@ public class RecursionExample1 {
 		if (file.exists()) {
 			File[] files = file.listFiles();
 			if (files.length == 0) {
-				System.out.println("ÎÄ¼ş¼ĞÊÇ¿ÕµÄ!");
+				System.out.println("æ–‡ä»¶å¤¹æ˜¯ç©ºçš„!");
 				return null;
 			} else {
 				for (File file2 : files) {
 					if (file2.isDirectory()) {
-						System.out.println("ÎÄ¼ş¼Ğ:" + file2.getCanonicalPath());
+						System.out.println("æ–‡ä»¶å¤¹:" + file2.getCanonicalPath());
 						recursive(file2.getAbsolutePath());
 					} else {
-						System.out.println("ÎÄ¼ş:" + file2.getCanonicalPath());
+						System.out.println("æ–‡ä»¶:" + file2.getCanonicalPath());
 						lists.add(file2);
 					}
 				}
 			}
 		} else {
-			System.out.println("ÎÄ¼ş²»´æÔÚ!");
+			System.out.println("æ–‡ä»¶ä¸å­˜åœ¨!");
 
 		}
 		return lists;
